@@ -1,0 +1,47 @@
+﻿
+<!doctype html>
+<html>
+    <head>
+     <title>Capture Signature in the webpage with jQuery plugins</title>
+    </head>
+    </head>
+    <body>
+        <style>
+            #signature{
+                width: 300px; height: 200px;
+                border: 1px solid black;
+            }
+        </style>
+
+        <!-- Signature -->
+        <div id="signature" style=''>
+            <canvas id="signature-pad" class="signature-pad" width="300px" height="200px"></canvas>
+        </div>
+        <br/>
+        <input type='button' id='click' value='click'><br/>
+        <textarea id='output'></textarea><br/>
+
+        <!-- Preview image -->
+        <img src='' id='sign_prev' style='display: none;' />
+
+        <!-- Script -->
+        <script src='jquery-3.0.0.js' type='text/javascript'></script>
+        <script src="signature_pad-master/js/signature_pad.js"></script>
+    
+        <script>
+            $(document).ready(function() {
+                var signaturePad = new SignaturePad(document.getElementById('signature-pad'));
+
+                $('#click').click(function(){
+                    var data = signaturePad.toDataURL('image/png');
+                    $('#output').val(data);
+
+                    $("#sign_prev").show();
+                    $("#sign_prev").attr("src",data);
+                    // Send data to server instead...
+                    //window.open(data);
+                });
+            })
+        </script>
+    </body>
+</html>
