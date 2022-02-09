@@ -1,0 +1,20 @@
+{
+    "name": "hanz/elearning",
+    "description": "E-Learning berbasis PHP",
+    "type": "project",
+    "require": {
+        "php": "^5.6.0"
+    },
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Hanz\\Elearning\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Farhan Maulidan",
+            "email": "farhanmaulidan0@gmail.com"
+        }
+    ]
+}
