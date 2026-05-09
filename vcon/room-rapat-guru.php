@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-12">
                 <div class="card-body">
-                    Rapat Guru SMAN 10 Bogor
+                    Teacher Meeting
                     <div class="pull-right" >
                         <div class="dropdown">
                           <button class="btn btn-success dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">

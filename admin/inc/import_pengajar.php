@@ -1,13 +1,7 @@
 <?php
 		global $mysqli;
-			$host="localhost";
-			$user="root";
-			$pass="";
-			$database="alhrfcju_db_elearning";
-			$mysqli=new mysqli($host,$user,$pass,$database);
-			if (mysqli_connect_errno()) {
-			trigger_error('Koneksi ke database gagal: '  . mysqli_connect_error(), E_USER_ERROR);
-        }
+			require_once __DIR__ . '/../../+koneksi.php';
+			$mysqli = $db;
 		if(isset($_POST['submit'])){
 
 			// Jika user mengklik tombol Import

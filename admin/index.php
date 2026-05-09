@@ -7,8 +7,8 @@ if (@$_SESSION['admin'] || @$_SESSION['pengajar']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/ico" href="img/favicon.ico"/>
-  <title>E-Learning SMAN 10 BOGOR</title>
+  <link rel="icon" type="image/svg+xml" href="stisla/assets/img/stisla-fill.svg"/>
+  <title>E-Learning PHP</title>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <!-- General CSS Files -->
@@ -158,7 +158,7 @@ if (@$_SESSION['admin'] || @$_SESSION['pengajar']) {
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="./">E-Learning SMAN 10 Bogor</a>
+            <a href="./">E-Learning PHP</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="./">DIXER TEN</a>
@@ -231,7 +231,7 @@ if (@$_SESSION['admin'] || @$_SESSION['pengajar']) {
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>E-Learning SMAN 10 Bogor</h1>
+            <h1>E-Learning PHP</h1>
           </div>
 
           <div class="section-body">
@@ -301,10 +301,10 @@ if (@$_SESSION['admin'] || @$_SESSION['pengajar']) {
 
           <footer class="main-footer">
             <div class="footer-left">
-              Copyright &copy; 2020 <div class="bullet"></div> E-Learning SMAN 10 BOGOR
+              Copyright &copy; 2020 <div class="bullet"></div> E-Learning PHP
             </div>
             <div class="footer-right">
-              Made with 💙 By : ICT SMAN 10
+              Made with 💙 By : Portfolio Project
             </div>
           </footer>
             </div>

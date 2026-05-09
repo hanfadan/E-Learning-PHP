@@ -154,7 +154,7 @@ if (@$_SESSION['siswa']) { ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>CBT Online E-Learning SMAN 10 BOGOR</title>
+    <title>CBT Online E-Learning PHP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="stisla/assets/css/style.css">
@@ -196,7 +196,7 @@ if (@$_SESSION['siswa']) { ?>
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a>E-Learning SMAN 10 Bogor</a>
+            <a>E-Learning PHP</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a>DIXER TEN</a>
@@ -373,10 +373,10 @@ if (@$_SESSION['siswa']) { ?>
 
 <footer class="main-footer">
   <div class="footer-left">
-    Copyright &copy; 2020 <div class="bullet"></div> E-Learning SMAN 10 BOGOR
+    Copyright &copy; 2020 <div class="bullet"></div> E-Learning PHP
   </div>
   <div class="footer-right">
-    Made with 💙 By : ICT SMAN 10
+    Made with 💙 By : Portfolio Project
   </div>
 </footer>
 

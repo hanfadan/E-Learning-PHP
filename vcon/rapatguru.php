@@ -8,7 +8,7 @@
       <script>
           var domain = "meet.jit.si";
           var options = {
-              roomName: "Rapat-Guru-SMAN 10 Bogor",
+              roomName: "Portfolio-Teacher-Meeting",
               width: 700,
               height: 580,
               parentNode: undefined,

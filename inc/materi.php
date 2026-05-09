@@ -5,7 +5,7 @@
 </div>
 
 <?php
-$db = mysqli_connect("localhost", "root", "", "alhrfcju_db_elearning");
+require_once __DIR__ . '/../+koneksi.php';
 if(@$_GET['action'] == '') { ?>
 	<div class="row">
 	    <div class="col-md-12">

@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-12">
                 <div class="card-body">
-                    Room 1 SMAN 10 Bogor
+                    Portfolio Room 1
                     <div class="pull-right" >
                         <div class="dropdown">
                           <button class="btn btn-success dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">

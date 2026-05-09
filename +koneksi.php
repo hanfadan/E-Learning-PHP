@@ -1,5 +1,29 @@
 <?php
-$db = mysqli_connect("localhost", "root", "", "alhrfcju_db_elearning");
+$config = array();
+$config_file = __DIR__ . '/config.php';
+
+if (file_exists($config_file)) {
+	$loaded_config = include $config_file;
+	if (is_array($loaded_config)) {
+		$config = $loaded_config;
+	}
+}
+
+$db_host = isset($config['db_host']) ? $config['db_host'] : getenv('DB_HOST');
+$db_user = isset($config['db_user']) ? $config['db_user'] : getenv('DB_USER');
+$db_pass = array_key_exists('db_pass', $config) ? $config['db_pass'] : getenv('DB_PASS');
+$db_name = isset($config['db_name']) ? $config['db_name'] : getenv('DB_NAME');
+
+$db_host = $db_host ? $db_host : 'localhost';
+$db_user = $db_user ? $db_user : 'root';
+$db_pass = $db_pass !== false ? $db_pass : '';
+$db_name = $db_name ? $db_name : 'elearning';
+
+$db = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+
+if (!$db) {
+	die('Database connection failed: ' . mysqli_connect_error());
+}
 
 //---fungsi2---//
 function cek_session($isi_admin, $isi_pengajar) {

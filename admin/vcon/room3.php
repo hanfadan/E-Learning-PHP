@@ -8,7 +8,7 @@ IPS1-IPS3<html>
       <script>
           var domain = "meet.jit.si";
           var options = {
-              roomName: "Room 3-SMAN 10 Bogor",
+              roomName: "Portfolio-Room-3",
               width: 700,
               height: 580,
               parentNode: undefined,

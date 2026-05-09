@@ -1,6 +1,6 @@
 <?php
 @session_start();
-$db = mysqli_connect("localhost", "root", "", "alhrfcju_db_elearning");
+require_once __DIR__ . '/+koneksi.php';
 ?>
 <script type="text/javascript">
 function Angkasaja(evt) {
@@ -13,10 +13,10 @@ return true;
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+  <link rel="icon" type="image/svg+xml" href="stisla/assets/img/stisla-fill.svg"/>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Daftar &mdash; E-Learning SMAN 10 BOGOR</title>
+    <title>Daftar &mdash; E-Learning PHP</title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -35,7 +35,7 @@ return true;
         <div class="row">
           <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
             <div class="login-brand">
-              <img src="img/logo-sekolah2.png" alt="logo" width="100" class="shadow-light rounded-circle">
+              <img src="stisla/assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
 
   <div class="card card-success">
@@ -178,7 +178,7 @@ return true;
         </div>
     </div>
     <div class="simple-footer">
-      Copyright &copy; 2020 E-Learning SMAN 10 BOGOR
+      Copyright &copy; 2020 E-Learning PHP
     </div>
   </div>
 </div>
