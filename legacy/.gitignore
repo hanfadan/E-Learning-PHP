@@ -1,0 +1,26 @@
+/vendor/
+config.php
+
+# Local database dumps and imports
+db/*.sql
+!db/schema.sql
+*.xlsx
+admin/*.xlsx
+admin/tmp/*
+!admin/tmp/.gitkeep
+
+# User-generated uploads and private learning materials
+admin/file_materi/*
+!admin/file_materi/.gitkeep
+admin/img-uploads/*
+!admin/img-uploads/.gitkeep
+admin/jawaban_tugas/*
+!admin/jawaban_tugas/.gitkeep
+
+# Profile photos with personal data
+img/foto_siswa/*
+!img/foto_siswa/anonim.png
+!img/foto_siswa/.gitkeep
+admin/img/foto_pengajar/*
+!admin/img/foto_pengajar/anonim.png
+!admin/img/foto_pengajar/.gitkeep
