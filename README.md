@@ -1,16 +1,12 @@
 # E-Learning Laravel
 
-This repository is a Laravel migration of a legacy procedural PHP e-learning project.
+This repository contains a Laravel version of the e-learning project database and application skeleton.
 
 ## Current Migration State
 
-- Laravel 13 is now the root application.
-- The original procedural app is preserved in `legacy/`.
-- Laravel routes proxy the legacy student and admin flows:
-  - `/` serves the student app.
-  - `/admin` serves the admin/teacher app.
-  - legacy POST/AJAX endpoints such as `/inc/*.php`, `/admin/inc/*.php`, `soal.php`, and `editor-upload.php` are routed through `LegacyController`.
-- The sanitized legacy schema is available in `legacy/db/schema.sql` and is installable through Laravel migrations.
+- Laravel 13 is the root application.
+- The native PHP compatibility layer has been removed.
+- The sanitized e-learning schema is available in `database/schema/elearning.sql` and is installable through Laravel migrations.
 - Starter Eloquent models exist for `tb_siswa`, `tb_pengajar`, and `tb_admin`.
 
 ## Setup
@@ -36,6 +32,6 @@ DB_PASSWORD=
 
 ## Migration Notes
 
-The app is intentionally migrated in stages. The compatibility layer keeps the existing screens reachable while pages are converted into native Laravel controllers, requests, policies, models, and Blade views.
+The native PHP module has been removed. Any remaining student/admin screens should be rebuilt as Laravel controllers, requests, policies, models, and Blade views.
 
 Do not commit real uploaded assignments, profile photos, import spreadsheets, database dumps, or local config files.

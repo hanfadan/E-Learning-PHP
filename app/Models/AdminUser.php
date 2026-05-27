@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class AdminUser extends LegacyModel
+class AdminUser extends ElearningModel
 {
     protected $table = 'tb_admin';
 

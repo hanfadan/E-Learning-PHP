@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Student extends LegacyModel
+class Student extends ElearningModel
 {
     protected $table = 'tb_siswa';
 

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Teacher extends LegacyModel
+class Teacher extends ElearningModel
 {
     protected $table = 'tb_pengajar';
 
