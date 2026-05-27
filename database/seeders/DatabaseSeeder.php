@@ -22,46 +22,46 @@ class DatabaseSeeder extends Seeder
         );
 
         DB::table('tb_admin')->updateOrInsert(
-            ['username' => 'admin'],
+            ['username' => 'demo_admin'],
             [
-                'nama_lengkap' => 'Demo Admin',
-                'alamat' => 'Demo Address',
-                'password' => md5('password'),
-                'pass' => 'password',
+                'nama_lengkap' => 'Portfolio Demo Admin',
+                'alamat' => 'Portfolio Review Account',
+                'password' => md5('portfolio123'),
+                'pass' => 'portfolio123',
             ],
         );
 
         DB::table('tb_pengajar')->updateOrInsert(
-            ['username' => 'teacher'],
+            ['username' => 'demo_teacher'],
             [
                 'nip' => 'TCH001',
-                'nama_lengkap' => 'Demo Teacher',
+                'nama_lengkap' => 'Portfolio Demo Teacher',
                 'tempat_lahir' => 'Demo',
                 'tgl_lahir' => '1990-01-01',
                 'jenis_kelamin' => 'L',
-                'alamat' => 'Demo Address',
+                'alamat' => 'Portfolio Review Account',
                 'foto' => 'anonim.png',
-                'password' => md5('password'),
-                'pass' => 'password',
+                'password' => md5('portfolio123'),
+                'pass' => 'portfolio123',
                 'status' => 'aktif',
             ],
         );
 
         DB::table('tb_siswa')->updateOrInsert(
-            ['username' => 'student'],
+            ['username' => 'demo_student'],
             [
                 'nis' => '0000000000000001',
-                'nama_lengkap' => 'Demo Student',
+                'nama_lengkap' => 'Portfolio Demo Student',
                 'tempat_lahir' => 'Demo',
                 'tgl_lahir' => '2010-01-01',
                 'jenis_kelamin' => 'L',
                 'agama' => 'Demo',
-                'alamat' => 'Demo Address',
+                'alamat' => 'Portfolio Review Account',
                 'id_kelas' => '1',
                 'thn_masuk' => 2026,
                 'foto' => 'anonim.png',
-                'password' => md5('password'),
-                'pass' => 'password',
+                'password' => md5('portfolio123'),
+                'pass' => 'portfolio123',
                 'status' => 'aktif',
             ],
         );

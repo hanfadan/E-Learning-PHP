@@ -42,6 +42,9 @@ CREATE TABLE `tb_admin` (
 -- Dumping data untuk tabel `tb_admin`
 --
 
+INSERT INTO `tb_admin` (`id_admin`, `nama_lengkap`, `alamat`, `username`, `password`, `pass`) VALUES
+(1, 'Portfolio Demo Admin', 'Portfolio Review Account', 'demo_admin', '72c602fb8de3c70f0d3938613e5e037d', 'portfolio123');
+
 
 -- --------------------------------------------------------
 
@@ -143,6 +146,9 @@ CREATE TABLE `tb_kelas` (
 --
 -- Dumping data untuk tabel `tb_kelas`
 --
+
+INSERT INTO `tb_kelas` (`id_kelas`, `nama_kelas`, `wali_kelas`, `ketua_kelas`) VALUES
+(1, 'Demo Class', 1, 1);
 
 
 -- --------------------------------------------------------
@@ -281,6 +287,9 @@ CREATE TABLE `tb_pengajar` (
 -- Dumping data untuk tabel `tb_pengajar`
 --
 
+INSERT INTO `tb_pengajar` (`id_pengajar`, `nip`, `nama_lengkap`, `tempat_lahir`, `tgl_lahir`, `jenis_kelamin`, `alamat`, `foto`, `username`, `password`, `pass`, `status`) VALUES
+(1, 'TCH001', 'Portfolio Demo Teacher', 'Demo', '1990-01-01', 'L', 'Portfolio Review Account', 'anonim.png', 'demo_teacher', '72c602fb8de3c70f0d3938613e5e037d', 'portfolio123', 'aktif');
+
 
 -- --------------------------------------------------------
 
@@ -352,6 +361,9 @@ CREATE TABLE `tb_siswa` (
 --
 -- Dumping data untuk tabel `tb_siswa`
 --
+
+INSERT INTO `tb_siswa` (`id_siswa`, `nis`, `nama_lengkap`, `tempat_lahir`, `tgl_lahir`, `jenis_kelamin`, `agama`, `alamat`, `id_kelas`, `thn_masuk`, `foto`, `username`, `password`, `pass`, `status`) VALUES
+(1, '0000000000000001', 'Portfolio Demo Student', 'Demo', '2010-01-01', 'L', 'Demo', 'Portfolio Review Account', '1', 2026, 'anonim.png', 'demo_student', '72c602fb8de3c70f0d3938613e5e037d', 'portfolio123', 'aktif');
 
 
 -- --------------------------------------------------------
